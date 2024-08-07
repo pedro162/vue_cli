@@ -6,7 +6,7 @@
     <p><input v-model="newUser"  type="text" /></p>
     <p><button @click.prevent="()=>{increaseClass();showConsole();changeUserName()}" >Action default</button></p>
     <p><button @click.prevent="()=>{increaseClass();showConsole();changeUserNameMapMutation()}" >Action mutate</button></p> 
-    --> 
+    -->  
     <div>
         <h2>Classes</h2>
         <div>
