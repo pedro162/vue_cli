@@ -1,8 +1,8 @@
 <template>
   <div>
     {{ $store.state.user}}
-    <UserComp/>
-    <CourseComp/>
+    <UserComp />
+    <CourseComp @origamid="showMessage" />
   </div>
 </template>
 
@@ -16,6 +16,11 @@ export default {
     //HelloWorld,
     UserComp,
     CourseComp
+  },
+  methods:{
+    showMessage(message){
+      console.log('message: ', message)
+    }
   }
 }
 </script>
